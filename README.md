@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+## Marathon Training Plan Generator
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Concepts
 
-## Available Scripts
+- [Overview](#overview)
+- [My Process](#my-process)
+    - [Challenges](#challenges)
+    - [What I learned](#what-i-learned)
+    - [Continued Development](#continued-development)
+    - [Instructions](#instructions)
+- [Author](#author)
+- [License](#license)
 
-In the project directory, you can run:
+## Overview 
 
-### `npm start`
+This is an app which creates marathon training plans. Why create an app if there's already a thousand training plans available online? Most training plans quickly load on mileage, add intensity, and track mileage instead of time spent on feet. While these are concepts yield great results, they make runners susceptive to injury and burnt out - whether it's while training or on race day. This app embraces the philosophy that it's better to be undertrained than overtrained. It aims to prevent injury by incorporating a slow consistent progression tracking time instead of mileage - since a mile in a hilly forest is very different from a mile in a flat city. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prior to undertaking this training plan individuals should first consult their healthcare provider. The MVP version of this app makes the assumption that an individual is capable of running 2 hours of per week over 4 or 5 days. If you're not at this level of fitness then talk to your healthcare provider about undertaking something akin to the [Couch to 5k training plan](https://marathonhandbook.com/couch-to-5k-training-plan/).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## My Process
 
-### `npm test`
+First, I created a mock using [Excalidraw](https://excalidraw.com/), thinking about the design from a mobile-first perspective. Next I broke down the UI into components and subcomponents by keeping the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). After a couple iterations I found a version I was content with, and numbered the components 1 through 9. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img src='mock.png' alt='Mock Design'>
+<img src='responsive-mock.png' alt='Responsive Mock Design'>
 
-### `npm run build`
+I named each component, and arranged it in the following hierarchy:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- App (1)
+    - Title (2)
+    - Description (3)
+    - TrainingPlanGenerator (4)
+        - DateSelection (5)
+        - TrainingPlan (6)
+            - TrainingPlanRow (7)
+        - PlanToPDFConverter (8)
+    - Footer(9)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Challenges
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Problem: 
 
-### `npm run eject`
+    - Solution:  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### What I learned
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Continued Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Instructions
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
 
-## Learn More
+- [Personal Portfolio:](www.mgrigo.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the terms of the MIT license.
