@@ -22,7 +22,7 @@ Prior to undertaking this training plan individuals should first consult their h
 First, I created a mock using [Excalidraw](https://excalidraw.com/), thinking about the design from a mobile-first perspective. Next I broke down the UI into components and subcomponents by keeping the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single-responsibility_principle). After a couple iterations I found a version I was content with, and numbered the components 1 through 9. 
 
 <img src='mock.png' alt='Mock Design'>
-<img src='responsive-mock.png' alt='Responsive Mock Design'>
+<img src='responsive_mock.png' alt='Responsive Mock Design'>
 
 I named each component, and arranged it in the following hierarchy:
 
@@ -34,7 +34,7 @@ I named each component, and arranged it in the following hierarchy:
         - TrainingPlan (6)
             - TrainingPlanRow (7)
         - PlanToPDFConverter (8)
-    - Footer(9)
+    - Footer (9)
 
 ### Challenges
 
